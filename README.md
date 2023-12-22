@@ -51,23 +51,75 @@ linearseach()<br>
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
-
-
-
-
+''' 
+Program to find the element in a list using Binary Search(Iterative Method)..<br>
+Developed by: Sanjay siavaramakrishnan M<br>
+RegisterNumber: 23013798<br>
+'''<br>
+def binarySearchIter(array,l,u,find):<br>
+    while l<=u:<br>
+        mid=l+(u-l)//2<br>
+        if(array[mid]==find):<br>
+            return mid<br>
+        elif(array[mid]<find):<br>
+            l=mid+1<br>
+        else:<br>
+            u=mid-1<br>
+    return 0<br>        
+array=eval(input())<br>
+array.sort()<br>
+u=len(array)-1<br>
+f=int(input())<br>
+x=binarySearchIter(array,0,u,f)<br>
+print(array)<br>
+if(x==0):<br>
+    print("Element not found")<br>
+else:<br>
+    print(f"Element found at index:  {x}")<br>
+     <br>
 
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
-
-
+''' 
+Program to find the element in a list using Binary Search (recursive Method).
+Developed by: Sanjay sivaramakrishnan M
+RegisterNumber: 23013798
+'''
+def BinarySearch(array, find, l,u):<br>
+  if l<=u:    <br>
+    mid=l+(u-l)//2<br>
+    if(array[mid]==find):<br>
+        return mid<br>
+    elif(array[mid]<find):<br>
+        l=mid+1<br>
+        return BinarySearch(array, find, l,u)<br>
+    else:<br>
+        u=mid-1<br>
+        return BinarySearch(array, find, l,u)<br>
+   <br>
+  return -1<br>
+    <br>
+arr = eval(input())<br>
+arr.sort()<br>
+k = eval(input())<br> 
+l=0<br>
+h=len(arr)-1<br>
+x=BinarySearch(arr, k, l, h)<br>
+print(arr)<br>
+if(x==-1):<br>
+    print("Element not found")<br>
+else:<br>
+    print(f"Element found at index:  {x}")<br>
+<br>
 
 
 ```
 ## Sample Input and Output
 ![image](https://github.com/sanjaysivaramakrishnan/Search-Algorithm/assets/151629616/249278c6-8cad-4350-b24f-71991e3aea01)
+![image](https://github.com/sanjaysivaramakrishnan/Search-Algorithm/assets/151629616/c8d7748d-76fd-47c4-8c95-818516abddb3)
+![image](https://github.com/sanjaysivaramakrishnan/Search-Algorithm/assets/151629616/ef85fef1-e11a-4426-9ba9-d3d237434ff0)
 
 
 
