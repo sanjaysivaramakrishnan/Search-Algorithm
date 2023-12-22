@@ -19,7 +19,33 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+''' 
+Program for linear search method to match the item in a list<br>
+Developed by:sanjay sivaramakrishnan M<br>
+RegisterNumber: 23013798<br>
+'''<br>
+def linearseach():<br>
+    arra=eval(input())<br>
+    arra.sort()<br>
+    print(arra)<br>
+    find=int(input())<br>
+    check=0<br>
+    index=0<br>
+    sum=0<br>
+    for i in arra:<br>
+        if(i==find):<br>
+            index=sum<br>
+            check=1<br>
+            break<br>
+        sum+=1<br>
+            <br>
+    if(check==1):<br>
+        print(f"Element found at index:  {index}")<br>
+    else:<br>
+        print("Element not found")<br>
+        <br>
+linearseach()<br>
+<br>
 
 
 ```
