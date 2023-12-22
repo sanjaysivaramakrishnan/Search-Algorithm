@@ -56,6 +56,7 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 
 
 
+
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
@@ -66,6 +67,7 @@ iii)	# Find the element in a list using Binary Search (recursive Method).
 
 ```
 ## Sample Input and Output
+![image](https://github.com/sanjaysivaramakrishnan/Search-Algorithm/assets/151629616/249278c6-8cad-4350-b24f-71991e3aea01)
 
 
 
