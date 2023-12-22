@@ -20,63 +20,63 @@ To write a program to perform linear search and binary search using python progr
 i)	#Use a linear search method to match the item in a list.
 ```
 ''' 
-Program for linear search method to match the item in a list<br>
-Developed by:sanjay sivaramakrishnan M<br>
-RegisterNumber: 23013798<br>
-'''<br>
-def linearseach():<br>
-    arra=eval(input())<br>
-    arra.sort()<br>
-    print(arra)<br>
-    find=int(input())<br>
-    check=0<br>
-    index=0<br>
-    sum=0<br>
-    for i in arra:<br>
-        if(i==find):<br>
-            index=sum<br>
-            check=1<br>
-            break<br>
-        sum+=1<br>
-            <br>
-    if(check==1):<br>
-        print(f"Element found at index:  {index}")<br>
-    else:<br>
-        print("Element not found")<br>
-        <br>
-linearseach()<br>
-<br>
-
-
+''' 
+Program for linear search method to match the item in a list
+Developed by:sanjay sivaramakrishnan M
+RegisterNumber: 23013798
+'''
+def linearseach():
+    arra=eval(input())
+    arra.sort()
+    print(arra)
+    find=int(input())
+    check=0
+    index=0
+    sum=0
+    for i in arra:
+        if(i==find):
+            index=sum
+            check=1
+            break
+        sum+=1
+            
+    if(check==1):
+        print(f"Element found at index:  {index}")
+    else:
+        print("Element not found")
+        
+linearseach()
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 ''' 
-Program to find the element in a list using Binary Search(Iterative Method)..<br>
-Developed by: Sanjay siavaramakrishnan M<br>
-RegisterNumber: 23013798<br>
-'''<br>
-def binarySearchIter(array,l,u,find):<br>
-    while l<=u:<br>
-        mid=l+(u-l)//2<br>
-        if(array[mid]==find):<br>
-            return mid<br>
-        elif(array[mid]<find):<br>
-            l=mid+1<br>
-        else:<br>
-            u=mid-1<br>
-    return 0<br>        
-array=eval(input())<br>
-array.sort()<br>
-u=len(array)-1<br>
-f=int(input())<br>
-x=binarySearchIter(array,0,u,f)<br>
-print(array)<br>
-if(x==0):<br>
-    print("Element not found")<br>
-else:<br>
-    print(f"Element found at index:  {x}")<br>
-     <br>
+''' 
+Program to find the element in a list using Binary Search(Iterative Method)..
+Developed by: Sanjay siavaramakrishnan M
+RegisterNumber: 23013798
+'''
+def binarySearchIter(array,l,u,find):
+    while l<=u:
+        mid=l+(u-l)//2
+        if(array[mid]==find):
+            return mid
+        elif(array[mid]<find):
+            l=mid+1
+        else:
+            u=mid-1
+    return 0        
+array=eval(input())
+array.sort()
+u=len(array)-1
+f=int(input())
+x=binarySearchIter(array,0,u,f)
+print(array)
+if(x==0):
+    print("Element not found")
+else:
+    print(f"Element found at index:  {x}")
+     
+ 
 
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
@@ -87,32 +87,36 @@ Program to find the element in a list using Binary Search (recursive Method).
 Developed by: Sanjay sivaramakrishnan M
 RegisterNumber: 23013798
 '''
-def BinarySearch(array, find, l,u):<br>
-  if l<=u:    <br>
-    mid=l+(u-l)//2<br>
-    if(array[mid]==find):<br>
-        return mid<br>
-    elif(array[mid]<find):<br>
-        l=mid+1<br>
-        return BinarySearch(array, find, l,u)<br>
-    else:<br>
-        u=mid-1<br>
-        return BinarySearch(array, find, l,u)<br>
-   <br>
-  return -1<br>
-    <br>
-arr = eval(input())<br>
-arr.sort()<br>
-k = eval(input())<br> 
-l=0<br>
-h=len(arr)-1<br>
-x=BinarySearch(arr, k, l, h)<br>
-print(arr)<br>
-if(x==-1):<br>
-    print("Element not found")<br>
-else:<br>
-    print(f"Element found at index:  {x}")<br>
-<br>
+''' 
+Program to find the element in a list using Binary Search (recursive Method).
+Developed by: Sanjay sivaramakrishnan M
+RegisterNumber: 23013798
+'''
+def BinarySearch(array, find, l,u):
+  if l<=u:    
+    mid=l+(u-l)//2
+    if(array[mid]==find):
+        return mid
+    elif(array[mid]<find):
+        l=mid+1
+        return BinarySearch(array, find, l,u)
+    else:
+        u=mid-1
+        return BinarySearch(array, find, l,u)
+   
+  return -1
+    
+arr = eval(input())
+arr.sort()
+k = eval(input()) 
+l=0
+h=len(arr)-1
+x=BinarySearch(arr, k, l, h)
+print(arr)
+if(x==-1):
+    print("Element not found")
+else:
+    print(f"Element found at index:  {x}")
 
 
 ```
